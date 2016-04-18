@@ -1,0 +1,2305 @@
+{
+  "catalogue": {
+    "name": "Dragon Rampant",
+    "id": "6449-ec99-bf37-a911",
+    "authorContact": "@Dogma2097",
+    "authorName": "Scott Dickson",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "d432-e6e2-d01b-d2d0",
+    "gameSystemRevision": 1,
+    "revision": 3,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "Dragon Rampant - Fantasy Wargaming Rules", "id": "6449-ec99-pub1"}, {"name": "Dragon Rampant", "id": "6449-ec99-pub2"}],
+    "selectionEntries": [
+      {
+        "name": "Bellicose Foot",
+        "id": "18e8-e7c3-c42c-dec8",
+        "collective": false,
+        "hidden": false,
+        "page": 19,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "18e8-e7c3-c42c-dec8-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {"id": "ab90-d160-4a98-ba56", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "a8a6-39d5-ac24-537c", "targetId": "1980-e6e2-8cac-d212", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"id": "ca51-c0b7-254f-ca65", "targetId": "1ddd-3024-0d3c-a87c", "type": "rule"},
+          {"id": "7544-70fc-8091-475b", "targetId": "7f31-7300-ea02-bf94", "type": "rule"},
+          {"id": "0f87-aab6-6f78-ef99", "targetId": "cc49-d681-52b5-381f", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Bellicose Foot",
+            "id": "43de-e372-f474-322e",
+            "hidden": false,
+            "page": 19,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "2", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "3+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "8\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "12", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "1898-e641-09ee-26d7",
+                "type": "set",
+                "value": 3,
+                "conditions": [{"childId": "8067-c3d4-946e-4164", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Counter Charge vs Foot",
+            "id": "cb41-e506-a017-15d2",
+            "description": "When an enemy successfully dices to attack this unit, but before it moves, this unit may test for a counter charge.\nThis is a Attack at 7+.\nIf it succeeds, the two units meet at a proportiaonate movement between starting positions and both count as attacking. If it fails, the enemy's charge stands in place. This rule does not apply against mounted units. This may not be used if the unit is Battered.",
+            "hidden": false,
+            "page": 19,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Terrifically Shiny Armour",
+            "id": "8067-c3d4-946e-4164",
+            "collective": false,
+            "hidden": false,
+            "page": 19,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+          }
+        ]
+      },
+      {
+        "name": "Elite Foot",
+        "id": "31a6-c926-3b0d-389d",
+        "collective": false,
+        "hidden": false,
+        "page": 17,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "31a6-c926-3b0d-389d-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 6}],
+        "entryLinks": [
+          {"id": "6ddb-3411-b2f4-d09e", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "650d-5610-dc5c-7b58", "targetId": "dced-af02-b7a8-9baf", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"id": "ce0b-6c57-1747-2fe2", "targetId": "1ddd-3024-0d3c-a87c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Elite Foot",
+            "id": "9ba8-d401-ab21-9433",
+            "hidden": false,
+            "page": 17,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "5+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "3+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "4", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "3+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "4+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "6\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "c144-4350-5877-cef0", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "6+/18\"",
+                "conditions": [{"childId": "c144-4350-5877-cef0", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Missiles",
+            "id": "c144-4350-5877-cef0",
+            "collective": false,
+            "hidden": false,
+            "page": 17,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+              {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+            "rules": [
+              {
+                "name": "Missiles",
+                "id": "2715-d2b0-9d83-309e",
+                "description": "The Unit is armed with Ranged Weapons.",
+                "hidden": false,
+                "page": 17,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Elite Riders",
+        "id": "0ffc-a3ed-ca21-b2ea",
+        "collective": false,
+        "hidden": false,
+        "page": 12,
+        "publicationId": "6449-ec99-pub2",
+        "type": "unit",
+        "categoryLinks": [{"id": "0ffc-a3ed-ca21-b2ea-8095-8ff0-a037-7a9f", "primary": true, "targetId": "8095-8ff0-a037-7a9f"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 6}],
+        "entryLinks": [
+          {"id": "de33-cb1b-ecd6-a87e", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "7c9b-fca4-cc22-c97b", "targetId": "dced-af02-b7a8-9baf", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Elite Riders",
+            "id": "52b5-7ba8-4dbe-66e4",
+            "hidden": false,
+            "page": 12,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "7+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "3+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "4", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "3+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "5+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "10\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "ef32-9213-9ffa-cb16",
+                "type": "set",
+                "value": "5+",
+                "conditions": [{"childId": "3e5c-e02a-1555-6f29", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/12\"",
+                "conditions": [{"childId": "64c0-653b-1ac0-8837", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "64c0-653b-1ac0-8837", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Elite Riders",
+            "id": "bfec-7904-f675-6259",
+            "collective": false,
+            "defaultSelectionEntryId": "8e21-3e55-70a3-f37b",
+            "hidden": false,
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}],
+            "entryLinks": [
+              {
+                "id": "8e21-3e55-70a3-f37b",
+                "targetId": "3f85-1bd1-9569-b718",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [{"childId": "3e5c-e02a-1555-6f29", "field": "selections", "scope": "0ffc-a3ed-ca21-b2ea", "shared": true, "type": "atLeast", "value": 1}]
+                  },
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [{"childId": "64c0-653b-1ac0-8837", "field": "selections", "scope": "0ffc-a3ed-ca21-b2ea", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              },
+              {
+                "id": "9e87-ab42-c131-afc6",
+                "targetId": "2508-8766-a5a9-2af4",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [{"childId": "64c0-653b-1ac0-8837", "field": "selections", "scope": "0ffc-a3ed-ca21-b2ea", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Level Headed",
+                "id": "3e5c-e02a-1555-6f29",
+                "collective": false,
+                "hidden": false,
+                "page": 12,
+                "publicationId": "6449-ec99-pub1",
+                "type": "upgrade",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+                "rules": [
+                  {
+                    "name": "Level Headed",
+                    "id": "3129-a3d8-6b2b-3bc5",
+                    "description": "This unit is better controlled than most.\nMay not use Wild Charge.",
+                    "hidden": false,
+                    "page": 12,
+                    "publicationId": "6449-ec99-pub1"
+                  }
+                ]
+              },
+              {
+                "name": "Mounted Missiles",
+                "id": "64c0-653b-1ac0-8837",
+                "collective": false,
+                "hidden": false,
+                "page": 12,
+                "publicationId": "6449-ec99-pub1",
+                "type": "upgrade",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+                "rules": [
+                  {
+                    "name": "Mounted Missiles",
+                    "id": "f8b3-9223-e19a-2bc0",
+                    "description": "Unit has Mounted Missiles.Wild Charge and Counter Charge may not be used.",
+                    "hidden": false,
+                    "page": 12,
+                    "publicationId": "6449-ec99-pub1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Greater Warbeasts",
+        "id": "02a3-ff31-14ae-f167",
+        "collective": false,
+        "hidden": false,
+        "page": 14,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "02a3-ff31-14ae-f167-c0e7-5e4d-2d81-3d46", "primary": true, "targetId": "c0e7-5e4d-2d81-3d46"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 6}],
+        "entryLinks": [
+          {
+            "id": "ae70-df7c-39e8-f8ab",
+            "targetId": "3f85-1bd1-9569-b718",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "0804-065e-a0c1-1a05", "field": "selections", "scope": "02a3-ff31-14ae-f167", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "e1ff-7767-a562-cd72", "field": "selections", "scope": "02a3-ff31-14ae-f167", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {"id": "f51c-67d4-a729-e3ac", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "0402-f793-bc54-776c", "targetId": "1980-e6e2-8cac-d212", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"id": "ea93-744d-43de-b096", "targetId": "1ddd-3024-0d3c-a87c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Greater Warbeasts",
+            "id": "aaad-36c5-fcfb-f149",
+            "hidden": false,
+            "page": 14,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "3+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "4", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "3+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "10\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "1721-f190-a3f5-9c45",
+                "type": "set",
+                "value": 5,
+                "conditions": [{"childId": "9a88-da3c-7b40-e7df", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "0804-065e-a0c1-1a05", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/12\"",
+                "conditions": [{"childId": "0804-065e-a0c1-1a05", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Cunning",
+            "id": "9a88-da3c-7b40-e7df",
+            "collective": false,
+            "hidden": false,
+            "page": 14,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+          },
+          {
+            "name": "Flame/Spore Attack",
+            "id": "0804-065e-a0c1-1a05",
+            "collective": false,
+            "hidden": false,
+            "page": 14,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+            "rules": [
+              {
+                "name": "Flame/Spore Attack",
+                "id": "787d-310a-23f2-9283",
+                "description": "Unit has ranged attack. Wild Charge is removed.",
+                "hidden": false,
+                "page": 14,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          },
+          {
+            "name": "Ponderous",
+            "id": "e1ff-7767-a562-cd72",
+            "collective": false,
+            "hidden": false,
+            "page": 14,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+            "rules": [
+              {
+                "name": "Ponderous",
+                "id": "3131-9832-4da1-d40a",
+                "description": "This unit is better controlled than most - Removes Wild Charge.",
+                "hidden": false,
+                "page": 14,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Foot",
+        "id": "3a23-f8a2-cbd0-189b",
+        "collective": false,
+        "hidden": false,
+        "page": 17,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "3a23-f8a2-cbd0-189b-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {
+            "id": "70c9-6dd1-481a-4fb5",
+            "targetId": "6331-da6c-2213-1b33",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "fe0f-a217-93e4-f460", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {
+            "id": "fe0f-a217-93e4-f460",
+            "targetId": "55fd-a573-a0c4-c5de",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "70c9-6dd1-481a-4fb5", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {"id": "3feb-e659-2761-75f3", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "0280-799b-837c-6690", "targetId": "dced-af02-b7a8-9baf", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Foot",
+            "id": "1cec-143f-bd64-10ed",
+            "hidden": false,
+            "page": 17,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "6+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "5+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "3", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "5+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "4+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "6\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "12", "typeId": "8526-a39c-7389-98f9"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Missiles",
+        "id": "9c23-9dac-b27f-a773",
+        "collective": false,
+        "hidden": false,
+        "page": 20,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "9c23-9dac-b27f-a773-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {"id": "cdf3-e6b0-b921-9ffe", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "3af1-9b8c-7fca-7c49", "targetId": "a75c-e3f5-5a2e-0524", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Missiles",
+            "id": "4a0f-b5d1-e98f-05c4",
+            "hidden": false,
+            "page": 20,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "7+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "7+", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "2", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "6", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "5+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "4+/18\"", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "6\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "12", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [{"field": "863f-4bf0-79ca-dc99", "type": "set", "value": "4+/12\""}]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Weighty Projectiles",
+            "id": "838a-b965-647b-2e1f",
+            "collective": false,
+            "hidden": false,
+            "page": 20,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": -1}],
+            "rules": [
+              {
+                "name": "Weighty Projectiles",
+                "id": "f8b4-cc3b-71b9-00f3",
+                "description": "This unit has weapons with less range than usual.",
+                "hidden": false,
+                "page": 20,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Riders",
+        "id": "de41-9368-2dfa-282a",
+        "collective": false,
+        "hidden": false,
+        "page": 12,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "de41-9368-2dfa-282a-8095-8ff0-a037-7a9f", "primary": true, "targetId": "8095-8ff0-a037-7a9f"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {"id": "55dc-feb0-956f-d638", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "09ba-6fc5-7434-dd9a", "targetId": "dced-af02-b7a8-9baf", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"id": "62f6-9ca7-a947-a498", "targetId": "bbef-a26a-96db-10da", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Heavy Riders",
+            "id": "de50-34e7-4b5a-c6b8",
+            "hidden": false,
+            "page": 12,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "5+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "3", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "4+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "5+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "10\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "2726-9f79-e163-2abd", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/12\"",
+                "conditions": [{"childId": "2726-9f79-e163-2abd", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "1898-e641-09ee-26d7",
+                "type": "set",
+                "value": 4,
+                "conditions": [{"childId": "abd1-ec64-e39e-581c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Mounted Missiles",
+            "id": "2726-9f79-e163-2abd",
+            "collective": false,
+            "hidden": false,
+            "page": 13,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+            "rules": [
+              {
+                "name": "Mounted Missiles",
+                "id": "71cc-ed2e-1e6f-791f",
+                "description": "This unit is armed with missile weapons.",
+                "hidden": false,
+                "page": 13,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          },
+          {
+            "name": "Chariots",
+            "id": "abd1-ec64-e39e-581c",
+            "collective": false,
+            "hidden": false,
+            "page": 13,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+            "rules": [
+              {
+                "name": "Chariots",
+                "id": "8250-8474-8014-3f81",
+                "description": "Unit is Reduced Model Unit. Unit may not enter Rogh Terrain or cross walls/ditches or similar.Armour increased to 4.",
+                "hidden": false,
+                "page": 13,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lesser Warbeasts",
+        "id": "a00a-e15c-f4f2-9678",
+        "collective": false,
+        "hidden": false,
+        "page": 15,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "a00a-e15c-f4f2-9678-c0e7-5e4d-2d81-3d46", "primary": true, "targetId": "c0e7-5e4d-2d81-3d46"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {
+            "id": "4f0a-5885-67dd-c322",
+            "targetId": "3f85-1bd1-9569-b718",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "181b-2f77-15bd-45cc", "field": "selections", "scope": "a00a-e15c-f4f2-9678", "shared": true, "type": "equalTo", "value": 0}]
+              }
+            ]
+          },
+          {"id": "f90c-84a9-330c-a884", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "c95b-2e9a-8cdc-549c", "targetId": "1980-e6e2-8cac-d212", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"id": "ebd8-22b8-db13-83d5", "targetId": "1ddd-3024-0d3c-a87c", "type": "rule"},
+          {"id": "2ccc-007b-64b1-1dd8", "targetId": "7f31-7300-ea02-bf94", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Lesser Warbeasts",
+            "id": "becd-7aa0-6349-acb6",
+            "hidden": false,
+            "page": 15,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "3", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "4+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "12\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/12\"",
+                "conditions": [{"childId": "181b-2f77-15bd-45cc", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "181b-2f77-15bd-45cc", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "1721-f190-a3f5-9c45",
+                "type": "set",
+                "value": 5,
+                "conditions": [{"childId": "eda0-bf7d-0ae0-9fe6", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Flame/Spore Attack",
+            "id": "181b-2f77-15bd-45cc",
+            "collective": false,
+            "hidden": false,
+            "page": 14,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+            "rules": [
+              {
+                "name": "Flame/Spore Attack",
+                "id": "8d98-773f-9893-8db6",
+                "description": "Unit has ranged attack. Wild Charge is removed.",
+                "hidden": false,
+                "page": 14,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          },
+          {
+            "name": "Cunning",
+            "id": "eda0-bf7d-0ae0-9fe6",
+            "collective": false,
+            "hidden": false,
+            "page": 14,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+          }
+        ]
+      },
+      {
+        "name": "Light Foot",
+        "id": "d34f-7568-d004-85f0",
+        "collective": false,
+        "hidden": false,
+        "page": 18,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "d34f-7568-d004-85f0-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 3}],
+        "entryLinks": [
+          {
+            "id": "cb36-aafb-6d82-8638",
+            "targetId": "6331-da6c-2213-1b33",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "f08f-6b40-78df-858a", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {
+            "id": "d860-efb4-0e92-f73e",
+            "targetId": "55fd-a573-a0c4-c5de",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {"childId": "f08f-6b40-78df-858a", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
+                  {"childId": "cb36-aafb-6d82-8638", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
+                ]
+              }
+            ]
+          },
+          {"id": "be75-b35a-7022-3995", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "6500-72c1-c700-6939", "targetId": "dced-af02-b7a8-9baf", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Light Foot",
+            "id": "eaf0-4249-eb90-3459",
+            "hidden": false,
+            "page": 18,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "6+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "5+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "2", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "5+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "4+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "8\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "12", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "2ad8-3ec9-bb7e-c13c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/6\"",
+                "conditions": [{"childId": "2ad8-3ec9-bb7e-c13c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "34e8-d512-c6cd-e745",
+                "type": "set",
+                "value": "6+",
+                "conditions": [{"childId": "f08f-6b40-78df-858a", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/12\"",
+                "conditions": [{"childId": "f08f-6b40-78df-858a", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Short Range Missiles",
+            "id": "2ad8-3ec9-bb7e-c13c",
+            "collective": false,
+            "hidden": false,
+            "page": 18,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+            "rules": [
+              {
+                "name": "Short Range Missiles",
+                "id": "9676-6188-f268-3d24",
+                "description": "This Unit is armed with Short Range Weapons, such as slings or javelins.",
+                "hidden": false,
+                "page": 18,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          },
+          {
+            "name": "Mixed Weapons",
+            "id": "f08f-6b40-78df-858a",
+            "collective": false,
+            "hidden": false,
+            "page": 18,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "2ad8-3ec9-bb7e-c13c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "cb36-aafb-6d82-8638", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Mixed Weapons",
+                "id": "2580-68a4-72c8-2dfe",
+                "description": "This unit carries a mix of spears and missiles.",
+                "hidden": false,
+                "page": 18,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Missiles",
+        "id": "004a-a7b7-9575-1ebe",
+        "collective": false,
+        "hidden": false,
+        "page": 20,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "004a-a7b7-9575-1ebe-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {"id": "a195-930d-5b25-4309", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "0631-fd62-fdc7-e3ad", "targetId": "a75c-e3f5-5a2e-0524", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Light Missiles",
+            "id": "6401-e2ba-e627-7e15",
+            "hidden": false,
+            "page": 20,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "7+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "6+", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "2", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "6", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "5+", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "5+/18\"", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "6\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "12", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "4+/18\"",
+                "conditions": [{"childId": "71af-22f8-afbd-cec4", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Sharpshooters",
+            "id": "71af-22f8-afbd-cec4",
+            "collective": false,
+            "hidden": false,
+            "page": 20,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+          }
+        ]
+      },
+      {
+        "name": "Light Riders",
+        "id": "4f41-750e-4aac-c0f4",
+        "collective": false,
+        "hidden": false,
+        "page": 13,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "4f41-750e-4aac-c0f4-8095-8ff0-a037-7a9f", "primary": true, "targetId": "8095-8ff0-a037-7a9f"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "entryLinks": [
+          {"id": "0bb3-1fb9-d168-f85e", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "fc07-086c-b89d-4551", "targetId": "1980-e6e2-8cac-d212", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"id": "c20c-5aee-a87a-9f8d", "targetId": "1158-78fe-e579-858f", "type": "rule"},
+          {"id": "0517-0e50-f54b-19cd", "targetId": "d383-858c-4105-c332", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Light Riders",
+            "id": "4fe7-7c35-7702-9e5d",
+            "hidden": false,
+            "page": 13,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "7+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "5+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "6+", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "5+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "3", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "5+", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "5+/12\"", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "12\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ],
+            "modifiers": [
+              {
+                "field": "863f-4bf0-79ca-dc99",
+                "type": "set",
+                "value": "5+/6\"",
+                "conditions": [{"childId": "f7c6-74ca-e27e-6c76", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Short Range Missiles",
+            "id": "f7c6-74ca-e27e-6c76",
+            "collective": false,
+            "hidden": false,
+            "page": 13,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": -1}],
+            "rules": [
+              {
+                "name": "Short Range Missiles",
+                "id": "c08a-7d28-2568-e872",
+                "description": "This unit is armed with Javelins and other shorter ranged weapons than the usual bows/pistols.",
+                "hidden": false,
+                "page": 13,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ravenous Hordes",
+        "id": "17fe-df17-cdba-32f4",
+        "collective": false,
+        "hidden": false,
+        "page": 21,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "17fe-df17-cdba-32f4-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+        "entryLinks": [
+          {"id": "102e-f0db-c41e-e712", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "4afc-2f1d-a263-dc93", "targetId": "7c6a-9594-005b-c570", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Ravenous Hordes",
+            "id": "a9a4-6adc-e3a8-3b2a",
+            "hidden": false,
+            "page": 21,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "7+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "5+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "1", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "6", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "6\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "12", "typeId": "8526-a39c-7389-98f9"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Scouts",
+        "id": "d848-62b7-2f53-4b17",
+        "collective": false,
+        "hidden": false,
+        "page": 20,
+        "publicationId": "6449-ec99-pub1",
+        "type": "unit",
+        "categoryLinks": [{"id": "d848-62b7-2f53-4b17-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+        "constraints": [
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+        "entryLinks": [
+          {"id": "29bd-4816-6a22-9b9d", "targetId": "5e88-e578-df2c-946c", "type": "selectionEntryGroup"},
+          {"id": "bd96-5b0a-4171-5fb4", "targetId": "741f-54b7-cdce-a013", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"id": "f41d-3898-9980-5f35", "targetId": "1158-78fe-e579-858f", "type": "rule"},
+          {"id": "5d35-a4ad-dbef-4c3e", "targetId": "d383-858c-4105-c332", "type": "rule"},
+          {"id": "2f78-b3fa-7034-d77c", "targetId": "7f31-7300-ea02-bf94", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Scouts",
+            "id": "6264-7b5d-1b2a-f237",
+            "hidden": false,
+            "page": 20,
+            "publicationId": "6449-ec99-pub1",
+            "typeId": "e25d-aa96-e275-4bec",
+            "characteristics": [
+              {"name": "Attack", "$text": "7+", "typeId": "d64c-a000-70a6-e7c4"},
+              {"name": "Move", "$text": "5+", "typeId": "ef32-9213-9ffa-cb16"},
+              {"name": "Shoot", "$text": "7+", "typeId": "34e8-d512-c6cd-e745"},
+              {"name": "Courage", "$text": "5+", "typeId": "be18-0720-37ac-688a"},
+              {"name": "Armour", "$text": "1", "typeId": "1898-e641-09ee-26d7"},
+              {"name": "Attack Value", "$text": "6", "typeId": "c699-e6ab-8c9a-cd71"},
+              {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+              {"name": "Shoot Value", "$text": "5+/12\"", "typeId": "863f-4bf0-79ca-dc99"},
+              {"name": "Maximum Movement", "$text": "8\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+              {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Hard To Target",
+            "id": "7c1f-a339-9b7d-9a3a",
+            "description": "Scouts count as Armour2 versus Shooting and may only be targetted when within 12\" of Enemy Unit.",
+            "hidden": false,
+            "page": 21,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Counter-Charge",
+        "id": "bbef-a26a-96db-10da",
+        "description": "When an enemy successfully dices to Attack this Unit, but before it moves, this unit may test for a Counter-Charge. Test for an Attack at 7+, and if it succeeds, the two units meet a proportionate movement distance between their starting distance and both count as Attacking. If it fails, the enemy's charge stands. Counter-CHarge may not be used if the Unit is Battered.",
+        "hidden": false,
+        "page": 12,
+        "publicationId": "6449-ec99-pub1"
+      },
+      {
+        "name": "Evade",
+        "id": "d383-858c-4105-c332",
+        "description": "When a unit successfully dices to Attack this unit, but befor eit moves, this unit may test to Evade at 7+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit only, may not move closer to the Attacking unit, and must avoid other units by 3\" as usual. Casualties at the end of this Skirmish attack cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the evading unit; if it makes contact with the Evading unit, it then Attacks, reducing the evading units Armour to 1. If the Evade test fails, the unit reduces it's Armour to 1 during the Attack. Evade cannot be used if the unit is Battered.",
+        "hidden": false,
+        "page": 13,
+        "publicationId": "6449-ec99-pub1"
+      },
+      {
+        "name": "Fleet Footed",
+        "id": "7f31-7300-ea02-bf94",
+        "description": "This unit does not halve its movement in rogh terrain.",
+        "hidden": false,
+        "page": 15,
+        "publicationId": "6449-ec99-pub1"
+      },
+      {
+        "name": "Ranger",
+        "id": "1ddd-3024-0d3c-a87c",
+        "description": "This Unit uses its normal Attack/Defence/Armour profile when fighting in rough terrain.",
+        "hidden": false,
+        "page": 17,
+        "publicationId": "6449-ec99-pub1"
+      },
+      {
+        "name": "Skirmish",
+        "id": "1158-78fe-e579-858f",
+        "description": "As an ordered activation, successful on a 7+, the unit may choose to make a half move and Shoot either before or after this movement takes place. All models in the unit Shoot with -1 to their dice scores.",
+        "hidden": false,
+        "page": 13,
+        "publicationId": "6449-ec99-pub1"
+      },
+      {
+        "name": "Wall of Spears",
+        "id": "e836-16a5-59f1-cb2b",
+        "description": "If the unit has 6 or more Strength Points it may form a Wall of Spears. On a move order. fprm the unit into base to base contact. This may not be in rough terrain or cover, and may not move whilst in this formation.\nIncreases Armour by 1 point against Attacks, but not Shooting. If Unit becomes Battered or Retreats, the Wall of Spears formation is broken.\nWall of Spears may not be used if Unit is Offensive has Mixed Weapons.",
+        "hidden": false,
+        "page": 17,
+        "publicationId": "6449-ec99-pub1"
+      },
+      {
+        "name": "Wild Charge",
+        "id": "cc49-d681-52b5-381f",
+        "description": "If the Unit is within Attack range of an enemy unit, you must activate and Attack. This is the only order that may be given. Wild Charge may not be used if the Unit is Battered.",
+        "hidden": false,
+        "page": 12,
+        "publicationId": "6449-ec99-pub1"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Blessed Weapons",
+        "id": "f31e-ff64-48d4-f6e4",
+        "collective": false,
+        "hidden": false,
+        "page": 43,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+        "rules": [
+          {
+            "name": "Blessed Weapons",
+            "id": "be40-21a1-f929-d684",
+            "description": "At the start of the game, roll a die, on a roll of 5 or 6, the unit re-rolls all misses once for all Attacks, Melee or Missile.\nYou must choose which weapons, Melee or Missile are Magical at the start of the game.",
+            "hidden": false,
+            "page": 43,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Cleric/Slayer",
+        "id": "5715-85a0-1800-dfd6",
+        "collective": false,
+        "hidden": false,
+        "page": 40,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+        "rules": [
+          {
+            "name": "Cleric/Slayer",
+            "id": "5c2d-946f-ffe3-da07",
+            "description": "A Cleric/Slayer unit identifies their nemesis at the start of the game- \nUndead, Trolls, Ogres etc.\nTheir powers are only usable against units of this type.\nThey count as owning Enchanted Weapons against this type, without the need to roll for effectiveness at the start of the game.\nThey may ignore fear conferred by units of their target type.\nWarbands that include Undead may not include Clerics.",
+            "hidden": false,
+            "page": 40,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Counter-Charge",
+        "id": "2508-8766-a5a9-2af4",
+        "collective": false,
+        "hidden": false,
+        "page": 12,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "infoLinks": [{"id": "6dbe-a6a2-f647-d67b", "targetId": "bbef-a26a-96db-10da", "type": "rule"}]
+      },
+      {
+        "name": "Enchanted Weapons",
+        "id": "8e99-2273-51a1-c05b",
+        "collective": false,
+        "hidden": false,
+        "page": 43,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+        "rules": [
+          {
+            "name": "Enchanted Weapons",
+            "id": "8ecd-40a6-eb7e-0690",
+            "description": "At the start of the game, roll a die, on a roll of a 6, the unit re-rolls all misses once for all Attacks, Melee or Missile.\nYou must choose which weapons, Melee or Missile are Magical at the start of the game.",
+            "hidden": false,
+            "page": 43,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Exploder",
+        "id": "a33d-dc92-4fc9-ecf8",
+        "collective": false,
+        "hidden": false,
+        "page": 40,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+        "rules": [
+          {
+            "name": "Exploder",
+            "id": "7c8f-26b0-4664-9e14",
+            "description": "As an ordered activation on 5+, an Exploder Unit will explode. Failed activation means the unit implodes and is removed without affecting anything else. A successful explosion affects ALL units with 6\" radius of the exploding unit. This is resolved as a Shooting Attack on a 3+.\nOnce exploded, the unit is removed from play as destroyed.",
+            "hidden": false,
+            "page": 41,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Fear",
+        "id": "9b0d-b6ab-40c7-3933",
+        "collective": false,
+        "hidden": false,
+        "page": 41,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+        "rules": [
+          {
+            "name": "Fear",
+            "id": "eb5d-3d32-e7e7-6894",
+            "description": "Courage tests caused as a result of Attacking (not shooting) suffer additional -1 to total.\nShould two units with fear encounter, the effect is cancelled. Undead units are not affected by Fear.",
+            "hidden": false,
+            "page": 41,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Fearful",
+        "id": "9f1e-fc4a-2dde-de93",
+        "collective": false,
+        "hidden": false,
+        "page": 41,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": -2}],
+        "rules": [
+          {
+            "name": "Fearful",
+            "id": "8dc8-2153-ffd0-fccd",
+            "description": "Fearful units takes -1 from the total of all Courage and Rally tests. If being attacked by Fear causing units, then this cumulates to -2.",
+            "hidden": false,
+            "page": 41,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Flying/Burrowing",
+        "id": "fe74-488d-11f1-dc04",
+        "collective": false,
+        "hidden": false,
+        "page": 41,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+        "rules": [
+          {
+            "name": "Flying/Burrowing",
+            "id": "be1c-1192-370a-a69e",
+            "description": "Flying units may move over/under friends and enemies alike, but may end their move no closer than 3\" as normal.\nFlying units ignore all terrain for movement and Attacks - unless cover provided by a defender is agreed to provide shelter from these units beforehand.",
+            "hidden": false,
+            "page": 41,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Hatred",
+        "id": "e0c1-886e-49dd-0287",
+        "collective": false,
+        "hidden": false,
+        "page": 42,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+        "rules": [
+          {
+            "name": "Hatred",
+            "id": "01d7-b13a-49f5-4421",
+            "description": "A unit must have a Hatred of a particular race - Dwarves, Trolls, Humans etc, named before the start of the game. All units with this rule in the Warband must name the same race.\nUnits with Hatred gain the Wild Charge ability against that enemy. If a unit already has Wild Charge, it now automatically passes the Wild Charge test.",
+            "hidden": false,
+            "page": 42,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Invisibility",
+        "id": "ccae-f642-1a42-c185",
+        "collective": false,
+        "hidden": false,
+        "page": 42,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 3}],
+        "rules": [
+          {
+            "name": "Invisibility",
+            "id": "a2d6-0bc2-b8c5-09a5",
+            "description": "Invisible units do not block line of sight and may not be targetted by ranged Attacks, except spells.\nInvisible units are visible during Attacks and may be Attacked.\nInvisible units can achive objectives and units may not pass through them as per normal unit rules.",
+            "hidden": false,
+            "page": 42,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Leader",
+        "id": "3c25-571a-be59-5545",
+        "collective": false,
+        "hidden": false,
+        "page": 10,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "rules": [
+          {
+            "name": "Leader",
+            "id": "4e65-2e13-4a85-3576",
+            "description": "Rolls two dice at the start of the game on the Leadership trait table.\nMay not join units as it IS a unit.",
+            "hidden": false,
+            "page": 9,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Unstoppable March of the Dead",
+            "id": "f6c1-10df-b01d-4026",
+            "collective": false,
+            "hidden": false,
+            "page": 47,
+            "publicationId": "6449-ec99-pub1",
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "rules": [
+              {
+                "name": "Unstoppable March of the Dead",
+                "id": "2d83-1d9b-c8e6-76c0",
+                "description": "Leadeship Trait for Undead units.\nIf an Undead leader rolls 8 or higher on the Leadership table, the Warband only ever takes Courage tests from Attacking, Shooting or Rallying.",
+                "hidden": false,
+                "page": 47,
+                "publicationId": "6449-ec99-pub1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mystical Armour",
+        "id": "8b0b-8b58-9d51-e43e",
+        "collective": false,
+        "hidden": false,
+        "page": 43,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+        "rules": [
+          {
+            "name": "Mystical Armour",
+            "id": "2968-c803-fd81-8731",
+            "description": "For each Strenghth Point lost, roll a die, on a 6, the lost point is ignored.",
+            "hidden": false,
+            "page": 43,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "No Feelings",
+        "id": "bb9c-7367-d4d1-e916",
+        "collective": false,
+        "hidden": false,
+        "page": 47,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "rules": [
+          {
+            "name": "No Feelings",
+            "id": "1547-cba9-4fb5-a8dd",
+            "description": "This unit has a Courage value of 0+ - the unit will never be Battered, but will still rout on a negative final score. They also ignore Fear.\nAny hits on this unit are rounded up - three hits remove 2 Strength Points from an Armour 2 Unit.",
+            "hidden": false,
+            "page": 47,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Offensive",
+        "id": "6331-da6c-2213-1b33",
+        "collective": false,
+        "hidden": false,
+        "page": 17,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+      },
+      {
+        "name": "Reduced Model Unit",
+        "id": "b570-8ca7-0cc7-a1e1",
+        "collective": false,
+        "hidden": false,
+        "page": 9,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+      },
+      {
+        "name": "Single Model Unit",
+        "id": "466b-538c-8cbe-7ea9",
+        "collective": false,
+        "hidden": false,
+        "page": 9,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+      },
+      {
+        "name": "Summoner",
+        "id": "ab3c-9b52-c4c5-0d1d",
+        "collective": false,
+        "hidden": false,
+        "page": 46,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 3}],
+        "rules": [
+          {
+            "name": "Summoner",
+            "id": "d2bd-14c8-0a25-a675",
+            "description": "A number of units can be left off-table at the start of the game to be later summoned.\nThe Summoner can Summon a unit on 6+ activation per turn. If at half strength or less, -1 to this activation.\nIf a scenario requires some of your units to be left off-table at the start, the Summoner is at -1 activation for this game.\n\nIf successfuly Summoned, the unit is placed within 12\" of the Summoner and no closer than 6\" to enemy. If not placeable, it must be left off-table.\nA Summoned unit is usally Flying/Nurrowing or Undead.\nThe Summoned unit may not take any action this turn.\nSummoned units are not counted as casualties/victory if not summoned.",
+            "hidden": false,
+            "page": 46,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Undead",
+        "id": "d759-cf3e-c0cc-34b6",
+        "collective": false,
+        "hidden": false,
+        "page": 46,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "entryLinks": [
+          {"id": "e102-6d1c-63d8-3c9a", "targetId": "9b0d-b6ab-40c7-3933", "type": "selectionEntry"},
+          {"id": "e146-b71c-b52c-058a", "targetId": "fe74-488d-11f1-dc04", "type": "selectionEntry"},
+          {"id": "1a3e-f150-774c-17c0", "targetId": "975e-a8eb-6ef4-b932", "type": "selectionEntry"},
+          {"id": "7258-3f2b-10a2-ef7c", "targetId": "bb9c-7367-d4d1-e916", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Venomous",
+        "id": "975e-a8eb-6ef4-b932",
+        "collective": false,
+        "hidden": false,
+        "page": 47,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 3}],
+        "rules": [
+          {
+            "name": "Venomous",
+            "id": "92a3-831a-ef94-200b",
+            "description": "Any unit with the Venomous rule counts any Attack die roll of 6 as 2 Strength Points of damage.",
+            "hidden": false,
+            "page": 47,
+            "publicationId": "6449-ec99-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Wall of Spears",
+        "id": "55fd-a573-a0c4-c5de",
+        "collective": false,
+        "hidden": false,
+        "page": 17,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "infoLinks": [{"id": "c5b9-1b95-4ff5-5ebf", "targetId": "e836-16a5-59f1-cb2b", "type": "rule"}]
+      },
+      {
+        "name": "Were Creatures",
+        "id": "c75b-3516-dbab-f5b7",
+        "collective": false,
+        "hidden": false,
+        "page": 47,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 1}],
+        "selectionEntries": [
+          {
+            "name": "Lesser Warbeasts",
+            "id": "caab-70b3-74a6-3f86",
+            "collective": false,
+            "hidden": false,
+            "page": 15,
+            "publicationId": "6449-ec99-pub1",
+            "type": "unit",
+            "categoryLinks": [{"id": "caab-70b3-74a6-3f86-7b0e-5def-9350-190a", "primary": true, "targetId": "7b0e-5def-9350-190a"}],
+            "constraints": [
+              {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": 10}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 4}],
+            "infoLinks": [
+              {"id": "6426-f66b-ed78-83c2", "targetId": "1ddd-3024-0d3c-a87c", "type": "rule"},
+              {"id": "dcf5-fc5d-15d1-5399", "targetId": "cc49-d681-52b5-381f", "type": "rule"},
+              {"id": "fb6b-c521-1a5a-0f65", "targetId": "7f31-7300-ea02-bf94", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Lesser Warbeasts",
+                "id": "ada0-fbf9-f973-daf6",
+                "hidden": false,
+                "page": 15,
+                "publicationId": "6449-ec99-pub1",
+                "typeId": "e25d-aa96-e275-4bec",
+                "characteristics": [
+                  {"name": "Attack", "$text": "5+", "typeId": "d64c-a000-70a6-e7c4"},
+                  {"name": "Move", "$text": "6+", "typeId": "ef32-9213-9ffa-cb16"},
+                  {"name": "Shoot", "$text": "-", "typeId": "34e8-d512-c6cd-e745"},
+                  {"name": "Courage", "$text": "4+", "typeId": "be18-0720-37ac-688a"},
+                  {"name": "Armour", "$text": "3", "typeId": "1898-e641-09ee-26d7"},
+                  {"name": "Attack Value", "$text": "4+", "typeId": "c699-e6ab-8c9a-cd71"},
+                  {"name": "Defence Value", "$text": "6", "typeId": "1721-f190-a3f5-9c45"},
+                  {"name": "Shoot Value", "$text": "-", "typeId": "863f-4bf0-79ca-dc99"},
+                  {"name": "Maximum Movement", "$text": "12\"", "typeId": "a2f3-44e6-5bd6-bacd"},
+                  {"name": "Strength Points", "$text": "6", "typeId": "8526-a39c-7389-98f9"}
+                ],
+                "modifiers": [
+                  {
+                    "field": "863f-4bf0-79ca-dc99",
+                    "type": "set",
+                    "value": "5+/12\"",
+                    "conditions": [{"childId": "181b-2f77-15bd-45cc", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  },
+                  {
+                    "field": "34e8-d512-c6cd-e745",
+                    "type": "set",
+                    "value": "6+",
+                    "conditions": [{"childId": "181b-2f77-15bd-45cc", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  },
+                  {
+                    "field": "1721-f190-a3f5-9c45",
+                    "type": "set",
+                    "value": 5,
+                    "conditions": [{"childId": "eda0-bf7d-0ae0-9fe6", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Flame/Spore Attack",
+                "id": "b1ed-38e7-c644-db9b",
+                "collective": false,
+                "hidden": false,
+                "page": 14,
+                "publicationId": "6449-ec99-pub1",
+                "type": "upgrade",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 2}],
+                "rules": [
+                  {
+                    "name": "Flame/Spore Attack",
+                    "id": "7c92-6374-6860-8d3b",
+                    "description": "Unit has ranged attack. Wild Charge is removed.",
+                    "hidden": false,
+                    "page": 14,
+                    "publicationId": "6449-ec99-pub1"
+                  }
+                ]
+              },
+              {
+                "name": "Cunning",
+                "id": "c028-28f5-fcab-9cb7",
+                "collective": false,
+                "hidden": false,
+                "page": 14,
+                "publicationId": "6449-ec99-pub1",
+                "type": "upgrade",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wild Charge",
+        "id": "3f85-1bd1-9569-b718",
+        "collective": false,
+        "hidden": false,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "infoLinks": [{"id": "4b11-4c53-abd5-8651", "targetId": "cc49-d681-52b5-381f", "type": "rule"}]
+      },
+      {
+        "name": "Wizard",
+        "id": "8d71-8d01-48a6-374a",
+        "collective": false,
+        "hidden": false,
+        "page": 41,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 4}]
+      },
+      {
+        "name": "Wizardling",
+        "id": "5639-4e85-852c-2722",
+        "collective": false,
+        "hidden": false,
+        "page": 46,
+        "publicationId": "6449-ec99-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 2}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Fantastical Rules (A)",
+        "id": "dced-af02-b7a8-9baf",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Creatures Features",
+            "id": "c820-bbf1-0a7f-e824",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "8584-c62c-69f8-a6f9", "targetId": "a33d-dc92-4fc9-ecf8", "type": "selectionEntry"},
+              {"id": "d1ae-464b-767f-3d4a", "targetId": "ccae-f642-1a42-c185", "type": "selectionEntry"},
+              {"id": "9ae5-e9ef-898e-604f", "targetId": "975e-a8eb-6ef4-b932", "type": "selectionEntry"},
+              {"id": "ea27-7cad-4e62-8f8e", "targetId": "c75b-3516-dbab-f5b7", "type": "selectionEntry"},
+              {"id": "d846-e08a-dd8e-8b0d", "targetId": "fe74-488d-11f1-dc04", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Psychology",
+            "id": "e0b6-f7cd-061f-e96c",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "0d27-acda-7d56-8957", "targetId": "9b0d-b6ab-40c7-3933", "type": "selectionEntry"},
+              {"id": "e4a5-929b-35f7-ef9c", "targetId": "e0c1-886e-49dd-0287", "type": "selectionEntry"},
+              {"id": "5f36-a40d-5caa-045e", "targetId": "9f1e-fc4a-2dde-de93", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Classes",
+            "id": "bfd1-a308-0579-ef67",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "8a8c-6077-b9ce-c34a", "targetId": "5715-85a0-1800-dfd6", "type": "selectionEntry"},
+              {"id": "8020-aa85-f48d-0182", "targetId": "ab3c-9b52-c4c5-0d1d", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Magical Arms and Armour",
+            "id": "4d69-93b8-2a39-7af2",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "4e39-a384-2d1a-7437", "targetId": "f31e-ff64-48d4-f6e4", "type": "selectionEntry"},
+              {"id": "a571-fa3b-e73b-bed9", "targetId": "8e99-2273-51a1-c05b", "type": "selectionEntry"},
+              {"id": "1a20-7b18-af9c-81b3", "targetId": "8b0b-8b58-9d51-e43e", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Spellcaster",
+            "id": "03d2-908f-532f-189c",
+            "collective": false,
+            "hidden": false,
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "entryLinks": [
+              {"id": "d223-b535-b21b-fbe3", "targetId": "8d71-8d01-48a6-374a", "type": "selectionEntry"},
+              {"id": "afb8-f10e-b05b-fc4d", "targetId": "5639-4e85-852c-2722", "type": "selectionEntry"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fantastical Rules (B)",
+        "id": "1980-e6e2-8cac-d212",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Creatures Features",
+            "id": "2188-daae-3d6f-8c25",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "8c7c-4413-2e35-c708", "targetId": "a33d-dc92-4fc9-ecf8", "type": "selectionEntry"},
+              {"id": "87ba-0444-e1fc-b8c4", "targetId": "ccae-f642-1a42-c185", "type": "selectionEntry"},
+              {"id": "6088-2e42-4194-b671", "targetId": "975e-a8eb-6ef4-b932", "type": "selectionEntry"},
+              {"id": "8a13-3862-56ec-427c", "targetId": "c75b-3516-dbab-f5b7", "type": "selectionEntry"},
+              {"id": "d250-e9c3-05f1-0de5", "targetId": "fe74-488d-11f1-dc04", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Psychology",
+            "id": "0d52-08ea-29bc-59d1",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "bd4c-421f-073c-a752", "targetId": "9b0d-b6ab-40c7-3933", "type": "selectionEntry"},
+              {"id": "a212-3e9d-525b-6235", "targetId": "e0c1-886e-49dd-0287", "type": "selectionEntry"},
+              {"id": "37ae-6a6b-28c3-8fb6", "targetId": "9f1e-fc4a-2dde-de93", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Magical Arms and Armour",
+            "id": "332b-5900-9ca2-f3ba",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "b24a-b65a-1ed8-8b22", "targetId": "f31e-ff64-48d4-f6e4", "type": "selectionEntry"},
+              {"id": "a197-855a-6183-c5ec", "targetId": "8e99-2273-51a1-c05b", "type": "selectionEntry"},
+              {"id": "8b9b-3c91-4b7e-2fe2", "targetId": "8b0b-8b58-9d51-e43e", "type": "selectionEntry"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fantastical Rules (C)",
+        "id": "a75c-e3f5-5a2e-0524",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Creatures Features",
+            "id": "386b-3e25-5035-774b",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "7d81-9b70-bf6b-afcc", "targetId": "a33d-dc92-4fc9-ecf8", "type": "selectionEntry"},
+              {"id": "7dbb-76e6-78e6-da88", "targetId": "ccae-f642-1a42-c185", "type": "selectionEntry"},
+              {"id": "6349-5d02-6596-3201", "targetId": "975e-a8eb-6ef4-b932", "type": "selectionEntry"},
+              {"id": "d267-8cb4-4522-eb8e", "targetId": "c75b-3516-dbab-f5b7", "type": "selectionEntry"},
+              {"id": "7528-d2e6-d8f4-ae1d", "targetId": "fe74-488d-11f1-dc04", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Psychology",
+            "id": "18c4-d73b-c973-f925",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "9672-0086-15d1-7955", "targetId": "9b0d-b6ab-40c7-3933", "type": "selectionEntry"},
+              {"id": "0057-52f4-ba2c-5b29", "targetId": "e0c1-886e-49dd-0287", "type": "selectionEntry"},
+              {"id": "f25e-f3e8-0d2e-cdf2", "targetId": "9f1e-fc4a-2dde-de93", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Classes",
+            "id": "8357-0f93-ad27-c560",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [{"id": "bd74-53a0-b5e7-fd21", "targetId": "ab3c-9b52-c4c5-0d1d", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Magical Arms and Armour",
+            "id": "1899-f914-f513-e390",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "0e69-b491-3a6e-af28", "targetId": "f31e-ff64-48d4-f6e4", "type": "selectionEntry"},
+              {"id": "f09a-7602-1291-67a6", "targetId": "8e99-2273-51a1-c05b", "type": "selectionEntry"},
+              {"id": "2c58-4869-5230-00d8", "targetId": "8b0b-8b58-9d51-e43e", "type": "selectionEntry"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fantastical Rules (D)",
+        "id": "741f-54b7-cdce-a013",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Creatures Features",
+            "id": "604f-9fac-f800-6a9e",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "b7da-7b68-73c4-a46f", "targetId": "ccae-f642-1a42-c185", "type": "selectionEntry"},
+              {"id": "f0a6-3d21-0d18-6cc3", "targetId": "975e-a8eb-6ef4-b932", "type": "selectionEntry"},
+              {"id": "1dee-a0e3-dd1a-e8e0", "targetId": "c75b-3516-dbab-f5b7", "type": "selectionEntry"},
+              {"id": "ed66-d9fe-0067-4506", "targetId": "fe74-488d-11f1-dc04", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Psychology",
+            "id": "3e47-63aa-4cf3-b67a",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "53f3-348f-47be-05b9", "targetId": "9b0d-b6ab-40c7-3933", "type": "selectionEntry"},
+              {"id": "e91f-89a6-4e92-d33c", "targetId": "e0c1-886e-49dd-0287", "type": "selectionEntry"},
+              {"id": "5ade-f03b-6157-8dbb", "targetId": "9f1e-fc4a-2dde-de93", "type": "selectionEntry"}
+            ]
+          },
+          {
+            "name": "Magical Arms and Armour",
+            "id": "cdae-a3ac-5750-c0cd",
+            "collective": false,
+            "hidden": false,
+            "entryLinks": [
+              {"id": "da1c-38eb-58c6-c298", "targetId": "f31e-ff64-48d4-f6e4", "type": "selectionEntry"},
+              {"id": "614a-ce25-e6f5-a37f", "targetId": "8e99-2273-51a1-c05b", "type": "selectionEntry"},
+              {"id": "74cb-2c37-f168-9890", "targetId": "8b0b-8b58-9d51-e43e", "type": "selectionEntry"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ravenous Hordes",
+        "id": "7c6a-9594-005b-c570",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [
+          {"id": "ed95-197c-f430-12a3", "targetId": "d759-cf3e-c0cc-34b6", "type": "selectionEntry"},
+          {"id": "2e80-d716-0eb8-0066", "targetId": "975e-a8eb-6ef4-b932", "type": "selectionEntry"},
+          {"id": "e148-4c3c-921f-d4ae", "targetId": "e0c1-886e-49dd-0287", "type": "selectionEntry"},
+          {"id": "d62f-300a-021c-0aef", "targetId": "9b0d-b6ab-40c7-3933", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Unit Options",
+        "id": "5e88-e578-df2c-946c",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [{"id": "8844-22bf-3dda-9fb5", "targetId": "3c25-571a-be59-5545", "type": "selectionEntry"}],
+        "selectionEntryGroups": [
+          {
+            "name": "Model Count Options",
+            "id": "2eda-71c4-0e8c-1717",
+            "collective": false,
+            "hidden": false,
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "entryLinks": [
+              {"id": "0957-66d3-cb02-4e32", "targetId": "b570-8ca7-0cc7-a1e1", "type": "selectionEntry"},
+              {"id": "4300-13f0-e462-9002", "targetId": "466b-538c-8cbe-7ea9", "type": "selectionEntry"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

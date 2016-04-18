@@ -1,0 +1,65 @@
+{
+  "gameSystem": {
+    "name": "Dragon Rampant",
+    "id": "d432-e6e2-d01b-d2d0",
+    "authorContact": "@dogma2097",
+    "authorName": "Scott Dickson",
+    "authorUrl": "http://goblingate.weebly.com",
+    "battleScribeVersion": 2.03,
+    "revision": 1,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [{"name": "Infantry", "id": "7b0e-5def-9350-190a"}, {"name": "Riders", "id": "8095-8ff0-a037-7a9f"}, {"name": "Warbeasts", "id": "c0e7-5e4d-2d81-3d46"}],
+    "costTypes": [{"name": "pts", "id": "points"}],
+    "forceEntries": [
+      {
+        "name": "Warband",
+        "id": "fbb6-3db0-adc5-d1a9",
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "fbb6-3db0-adc5-d1a9-7b0e-5def-9350-190a",
+            "targetId": "7b0e-5def-9350-190a",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 10}]
+          },
+          {
+            "name": "Riders",
+            "id": "fbb6-3db0-adc5-d1a9-8095-8ff0-a037-7a9f",
+            "targetId": "8095-8ff0-a037-7a9f",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 10}]
+          },
+          {
+            "name": "Warbeasts",
+            "id": "fbb6-3db0-adc5-d1a9-c0e7-5e4d-2d81-3d46",
+            "targetId": "c0e7-5e4d-2d81-3d46",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 10}]
+          }
+        ],
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 4},
+          {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 10},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 12}
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Unit",
+        "id": "e25d-aa96-e275-4bec",
+        "characteristicTypes": [
+          {"name": "Attack", "id": "d64c-a000-70a6-e7c4"},
+          {"name": "Move", "id": "ef32-9213-9ffa-cb16"},
+          {"name": "Shoot", "id": "34e8-d512-c6cd-e745"},
+          {"name": "Courage", "id": "be18-0720-37ac-688a"},
+          {"name": "Armour", "id": "1898-e641-09ee-26d7"},
+          {"name": "Attack Value", "id": "c699-e6ab-8c9a-cd71"},
+          {"name": "Defence Value", "id": "1721-f190-a3f5-9c45"},
+          {"name": "Shoot Value", "id": "863f-4bf0-79ca-dc99"},
+          {"name": "Maximum Movement", "id": "a2f3-44e6-5bd6-bacd"},
+          {"name": "Strength Points", "id": "8526-a39c-7389-98f9"}
+        ]
+      }
+    ],
+    "publications": [{"name": "Dragon Rampant - Fantasy Wargaming Rules", "id": "d432-e6e2-pub1"}]
+  }
+}
